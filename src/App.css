@@ -1,38 +1,107 @@
-.App {
+.alert{
   text-align: center;
+  border-radius: 5px;
+  padding: 3px;
+  margin-bottom: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.alert-success{
+  background: rgba(42, 26, 131, 0.26);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.alert-fail{
+  background: rgba(39, 0, 0, 0.253);
+}
+.compras{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border-radius: 5px;
+  padding:30px 40px;
+  max-width: 550px;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.compras-titulo{
+  text-align: center;
+  color:#063251;
+  margin-bottom: 20px;
+}
+
+.compras-formulario{
   display: flex;
-  flex-direction: column;
+}
+
+.compras-formulario input{
+  flex: 1;
+  background:#f1f5f8;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 5px;
+}
+
+.compras-formulario button{
+  padding: 3px 10px;
+  margin-left: 10px;
+  background: #a5d5f8;
+  border: none;
+  border-radius: 5px;
+}
+
+.compras-lista{
+  padding: 20px 0px;
+  color: #102a42;
+}
+
+.compras-lista .item{
+  display: flex;
   align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 400ms;
+}
+
+.compras-lista .item:hover{
+  background:#a5d5f84f;
+}
+
+.compras-lista p{
+  flex: 1;
+}
+
+.btn{
+  margin-left: 10px;
+  background: none;
+  border: none;
+}
+
+.btn-edit{
+  color: rgb(82, 113, 197);
+}
+.btn-delete{
+  color: red;
+}
+
+article+article{
+  margin-top: 10px;
+}
+
+.compras-footer{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-deleteAll{
+  transition: all 400ms;
+  font-size: .9rem;
+  border: none;
+  background: none;
+  color: rgba(255, 0, 0, 0.719);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-deleteAll:hover{
+  color: red;
 }
+
+/*HandCrafted by Victor Felizardo Viageiro*/

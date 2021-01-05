@@ -1,0 +1,7 @@
+<article className="item">
+    <p>Coca Cola 2l</p>
+    <button className="btn btn-edit"><FaEdit className="icon"/></button>
+    <button className="btn btn-delete"><FaTrash className="icon"/></button>
+</article>
+
+/*HandCrafted by Victor Felizardo Viageiro*/
