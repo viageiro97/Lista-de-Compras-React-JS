@@ -80,7 +80,7 @@ function editItem(id){
         <input onChange={
           (e)=>{setItem(e.currentTarget.value)}
         } value={item} placeholder="Ex: Arroz..." type="text" name="item" id=""/>
-        <button type="submit">Guardar</button>
+        <button type="submit">{edit.isEditing?"Actualizar":"Adicionar"}</button>
       </form>
       <div className="compras-lista">
         {
