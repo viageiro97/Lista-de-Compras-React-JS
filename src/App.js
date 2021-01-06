@@ -15,6 +15,12 @@ function App() {
    produtosMemoria&&setProdutos(JSON.parse(produtosMemoria));
   },[]);
 
+//RestoreDefautl
+function restoreDefault(){
+  setEdit({isEditing:false,id:""});
+  setItem("");
+}
+
 //Add Item to the List and in LocalStorage!
   function handleSubmit(e){
     e.preventDefault();
@@ -24,9 +30,8 @@ function App() {
           if(edit.id === produto.id){
             produto.content=item;
             localStorage.setItem('produtosMemoria',JSON.stringify(produtos));
-            setItem('');
             setModalStatus({css:"success",message:"Artigo Actualizado!",isOn:true});
-            setEdit({isEditing:false,id:""});
+            restoreDefault();
           }
         })
         return
@@ -50,6 +55,7 @@ function removeItem(id){
   localStorage.setItem('produtosMemoria',JSON.stringify(newProdutos));
   setProdutos(newProdutos);
   setModalStatus({css:"success",message:"Artigo Removido com Sucesso",isOn:true});
+  restoreDefault();
 }
 
 //Remove All items
